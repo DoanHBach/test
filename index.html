@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/font/stylesheet.css" />
+    <link rel="stylesheet" href="./script.js" />
+  </head>
+  <body>
+    <div class="head1">
+      <div class="background-img"></div>
+      <div class="head1-sub">
+        <!-- Banner -->
+        <div class="banner">
+          <div class="mdl-left">
+            <div class="list-left">
+              <ul class="list-left1">
+                <li>
+                  <i style="color: #fff" class="fa-solid fa-bars"></i>
+                </li>
+                <li style="margin-left: 10px"><a href="">Our Rooms</a></li>
+                <li style="margin-left: 10px"><a href="">Restaurant</a></li>
+                <li style="margin-left: 10px"><a href="">Spa</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mdl-mid">
+            <img
+              style="width: 150px; height: 92px"
+              class=""
+              src="assets/img/img1.png"
+              alt=""
+            />
+          </div>
+          <div class="mdl-right">
+            <div class="list-right">
+              <ul class="list-right1">
+                <li>
+                  <a href=""
+                    ><img
+                      style="width: 18px; height: 18px"
+                      src="assets/img/img2.png"
+                      alt=""
+                  /></a>
+                </li>
+                <li style="margin-left: 10px"><a href="">en</a></li>
+                <li style="margin-left: 10px"><a href="">de</a></li>
+              </ul>
+              <div class="button"><a href="">Book Now</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <p class="title1">Escape to Elegance</p>
+        </div>
+
+        <!-- === BOOKING === -->
+        <div class="search-container">
+          <div class="input-container">
+            <label for="checkinDate">Check-in *</label>
+            <input type="date" id="checkinDate" required />
+          </div>
+          <div class="input-container">
+            <label for="checkoutDate">Check-out *</label>
+            <input type="date" id="checkoutDate" required />
+          </div>
+          <div class="input-container">
+            <label for="adults">Adults</label>
+            <select id="adults">
+              <option value="1">1 Adult</option>
+              <option value="2">2 Adults</option>
+              <option value="3">3 Adults</option>
+              <option value="4">4 Adults</option>
+              <option value="5">5 Adults</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="children">Children</label>
+            <select id="children">
+              <option value="0">0 Children</option>
+              <option value="1">1 Child</option>
+              <option value="2">2 Children</option>
+              <option value="3">3 Children</option>
+              <option value="4">4 Children</option>
+              <option value="5">5 Children</option>
+            </select>
+          </div>
+          <button onclick="searchHotels()">Search</button>
+        </div>
+
+        <script src="script.js"></script>
+      </div>
+    </div>
+
+    <!-- ========= Content 3 ============ -->
+    <div class="container1">
+      <div class="image-container1">
+        <img style="height: 100vh" src="/assets/img/img9.PNG" alt="Image" />
+      </div>
+      <div class="content-container1">
+        <h2>Winter Special</h2>
+        <h2>Offer</h2>
+        <p>
+          Discover a world of luxury and relaxation with our carefully curated
+          hotel offers, designed to enhance your stay and create lasting
+          memories. Whether you’re planning a romantic getaway, a family
+          vacation, or a business trip, we have the perfect offer to suit your
+          needs and elevate your experience.
+        </p>
+        <button class="offer-button">View Our Offers</button>
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="content3">
+        <h2>Our Rooms</h2>
+        <p>
+          Get ready to carve through pristine powder and conquer the slopes of
+          varying difficulty levels. Our resort boasts a diverse range of ski
+          and snowboard trails, ensuring there’s something for everyone, from
+          beginners to seasoned experts.
+        </p>
+      </div>
+    </div>
+
+    <!-- FOUR IMAGE -->
+    <div class="image-container4">
+      <div class="image">
+        <img src="assets/img/img11.jpg" alt="Image 1" />
+        <div class="image-info">
+          <span class="name">Deluxe Room</span>
+          <span class="price">$59</span>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/img/img12.jpg" alt="Image 2" />
+        <div class="image-info">
+          <span class="name">Prestige Room</span>
+          <span class="price">$79</span>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/img/img13.jpg" alt="Image 3" />
+        <div class="image-info">
+          <span class="name">Alpine Suite</span>
+          <span class="price">$109</span>
+        </div>
+      </div>
+      <div class="image">
+        <img src="assets/img/img14.jpg" alt="Image 4" />
+        <div class="image-info">
+          <span class="name">Serenity Suite</span>
+          <span class="price">$119</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="content-container2">
+        <h2>Our Resort</h2>
+        <p>
+          Glide down groomed runs or challenge yourself on thrilling black
+          diamond trails, all while surrounded by the beauty of snow-covered
+          peaks.
+        </p>
+        <button class="directions-button">Get Directions</button>
+      </div>
+      <div class="image-container2">
+        <img src="./assets/img/img10.PNG" alt="Image" />
+      </div>
+    </div>
+
+    <div class="image-container5">
+      <img src="assets/img/img15.jpg" alt="Image" class="hover-slide" />
+    </div>
+
+    <div class="container6">
+      <div class="content6">
+        <h2>Restaurant</h2>
+        <p>
+          Executive Chef, showcases their expertise and passion for fine dining
+          by using the finest, locally sourced ingredients
+        </p>
+      </div>
+      <button class="discover-more">Discover More</button>
+    </div>
+
+    <div class="image-container7">
+      <img src="assets/img/img16.jpg" alt="Image 1" />
+      <img src="assets/img/img17.jpg" alt="Image 2" />
+      <img src="assets/img/img18.jpg" alt="Image 3" />
+      <img style="height: 455.53px" src="assets/img/img19.jpg" alt="Image 4" />
+    </div>
+
+    <div class="container8">
+      <div class="content8">
+        <h2>A World of Spa</h2>
+        <p>
+          Nestled within the heart of our hotel, our spa is a sanctuary of
+          relaxation and rejuvenation, dedicated to enhancing your well-being
+          and restoring your inner balance.
+        </p>
+      </div>
+    </div>
+
+    <div class="image-container9">
+      <img src="assets/img/img20.jpg" alt="Image" class="hover-slide" />
+    </div>
+
+    <div class="container10">
+      <div class="content10">
+        <h2>Restaurant</h2>
+        <p>
+          Executive Chef, showcases their expertise and passion for fine dining
+          by using the finest, locally sourced ingredients
+        </p>
+      </div>
+      <button class="discover-more1">Discover More</button>
+    </div>
+
+    <div class="image-containerr">
+      <div class="image-wrapper">
+        <img src="assets/img/img21.jpg" alt="Image 1" />
+        <div class="image-description2"></div>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/img/img22.jpg" alt="Image 2" />
+        <div class="image-description2"></div>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/img/img23.jpg" alt="Image 3" />
+        <div class="image-description2"></div>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="image-wrapper">
+        <img src="assets/img/img24.jpg" alt="Image 4" />
+        <div class="image-description2"></div>
+        <button class="learn-more">Learn More</button>
+      </div>
+    </div>
+
+    <!-- HEAD 2 -->
+    <div class="head2">
+      <!-- Content-2 -->
+
+      <div class="info">
+        <div class="icon3">
+          <img
+            style="width: 150px; height: 60px; background-color: #eee"
+            src="assets/img/img25.png"
+            alt=""
+          />
+        </div>
+        <div class="sign-up">
+          <div><h2>Newsletter Sign Up</h2></div>
+          <div>Sign up for our news, deals and special offers.</div>
+          <input class="mail" type="text" placeholder="Your Email Address" />
+          <div class="button2"><a href="">Sign Up</a></div>
+          <div></div>
+        </div>
+        <div class="hotline">
+          <div>The Hoteller Resort Via Serlas 27,</div>
+          <div>7500 St. Moritz, Switzerland</div>
+          <div><a style="margin: top 5px" href="">+45 35634 3444</a></div>
+          <div><a href="">contact@thehotel.com</a></div>
+          <div class="social">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="info1">
+        <div class="inf-left">
+          <ul>
+            <li>About Hotel</li>
+            <li>Our Rooms</li>
+            <li>Restaurant & Bar</li>
+            <li>Spa & Wellness</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="inf-mid">
+          <ul>
+            <li>Deluxe Room</li>
+            <li>Prestige Room</li>
+            <li>Alpine Suite</li>
+            <li>Serinity Suite</li>
+            <li>Residence Suite</li>
+            <li>Penthouse</li>
+          </ul>
+        </div>
+        <div class="inf-right">
+          <div>© Copyright All rights reserved.</div>
+          <div>THE HOTELLER SKI RESORT</div>
+        </div>
+      </div>
+
+      <div class="info2">
+        <div>
+          <img src="assets/img/img4.png" alt="" />
+          <img src="assets/img/img5.png" alt="" />
+        </div>
+        <div>
+          <img src="assets/img/img6.png" alt="" />
+          <img src="assets/img/img7.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- BILLING -->
+    <div class="container-bill">
+      <div class="billing-details">
+        <h2>Billing Details</h2>
+        <div class="name-input-group">
+          <div class="input-group">
+            <label for="first-name">First Name*</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name*</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="company-name">Company Name (Optional)</label>
+          <input type="text" id="company-name" name="company-name" />
+        </div>
+        <div class="input-group">
+          <label for="country-region">Country / Region*</label>
+          <select id="country-region" name="country-region" required>
+            <option value="AF">Afghanistan</option>
+            <option value="AX">Åland Islands</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AI">Anguilla</option>
+            <option value="AQ">Antarctica</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BZ">Belize</option>
+            <option value="BJ">Benin</option>
+            <option value="BM">Bermuda</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia (Plurinational State of)</option>
+            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BW">Botswana</option>
+            <option value="BV">Bouvet Island</option>
+            <option value="BR">Brazil</option>
+            <option value="IO">British Indian Ocean Territory</option>
+            <option value="BN">Brunei Darussalam</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="CV">Cabo Verde</option>
+            <option value="KH">Cambodia</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="KY">Cayman Islands</option>
+            <option value="CF">Central African Republic</option>
+            <option value="TD">Chad</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CX">Christmas Island</option>
+            <option value="CC">Cocos (Keeling) Islands</option>
+            <option value="CO">Colombia</option>
+            <option value="KM">Comoros</option>
+            <option value="CG">Congo</option>
+            <option value="CD">Congo (Democratic Republic of the)</option>
+            <option value="CK">Cook Islands</option>
+            <option value="CR">Costa Rica</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CW">Curaçao</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="DJ">Djibouti</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="GQ">Equatorial Guinea</option>
+            <option value="ER">Eritrea</option>
+            <option value="EE">Estonia</option>
+            <option value="ET">Ethiopia</option>
+            <option value="FK">Falkland Islands (Malvinas)</option>
+            <option value="FO">Faroe Islands</option>
+            <option value="FJ">Fiji</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option>
+            <option value="GF">French Guiana</option>
+            <option value="PF">French Polynesia</option>
+            <option value="TF">French Southern Territories</option>
+            <option value="GA">Gabon</option>
+            <option value="GM">Gambia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GH">Ghana</option>
+            <option value="GI">Gibraltar</option>
+            <option value="GR">Greece</option>
+            <option value="GL">Greenland</option>
+            <option value="GD">Grenada</option>
+            <option value="GP">Guadeloupe</option>
+            <option value="GU">Guam</option>
+            <option value="GT">Guatemala</option>
+            <option value="GG">Guernsey</option>
+            <option value="GN">Guinea</option>
+            <option value="GW">Guinea-Bissau</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haiti</option>
+            <option value="HM">Heard Island and McDonald Islands</option>
+            <option value="VA">Holy See</option>
+            <option value="HN">Honduras</option>
+            <option value="HK">Hong Kong</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran (Islamic Republic of)</option>
+            <option value="IQ">Iraq</option>
+            <option value="IE">Ireland</option>
+            <option value="IM">Isle of Man</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italy</option>
+            <option value="JM">Jamaica</option>
+            <option value="JP">Japan</option>
+            <option value="JE">Jersey</option>
+            <option value="JO">Jordan</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="KE">Kenya</option>
+            <option value="KI">Kiribati</option
+        </select>
+        </div>
+        <div class="input-group">
+          <label for="street-address">Street Address*</label>
+          <input
+            type="text"
+            id="street-address"
+            name="street-address"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="postcode-zip">Postcode / ZIP (Optional)</label>
+          <input type="text" id="postcode-zip" name="postcode-zip" />
+        </div>
+        <div class="input-group">
+          <label for="town-city">Town / City*</label>
+          <input type="text" id="town-city" name="town-city" required />
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone*</label>
+          <input type="text" id="phone" name="phone" required />
+        </div>
+        <div class="input-group">
+          <label for="email-address">Email Address*</label>
+          <input
+            type="email"
+            id="email-address"
+            name="email-address"
+            required
+          />
+        </div>
+        <p>Additional Information</p>
+        <div class="input-group">
+          <label for="order-notes">Order Notes (Optional)</label>
+          <textarea id="order-notes" name="order-notes"></textarea>
+        </div>
+      </div>
+      <div style="margin-top:40px; margin-left:30px" class="billing-review">
+        <table>
+          <tr class="header-row" >
+            <th style="text-align: left;background-color :#333">PRODUCT</th>
+            <th style="text-align: right;background-color :#333">SUBTOTAL</th>
+          </tr>
+          <tr style="border-bottom: 1px solid #ccc">
+            <td style="text-align: left; border-left:1px solid #ccc">Booking ID - 1257 | - Serenity Suite on April 2, 2024 - April 11, 2024 </td>
+            <td style="text-align: right;border-right:1px solid #ccc">$1,854.00
+            </td>
+          </tr>
+          </tr style="border-bottom: 1px solid #ccc">
+          <tr style="border-bottom: 1px solid #ccc">
+            <td style="text-align: left; border-left:1px solid #ccc;font-weight:bold">Subtotal</td>
+            <td style="text-align: right;border-right:1px solid #ccc; font-weight:bold">$1,854.00
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid #ccc">
+            <td style="text-align: left; border-left:1px solid #ccc; font-weight:bold">Total</td>
+            <td style="text-align: right;border-right:1px solid #ccc; font-weight:bold">$1,854.00
+            </td>
+          </tr>
+        </table>
+
+        <div class="container">
+          <div class="billing-details">
+            <!-- Phần Billing Details -->
+          </div>
+          <div class="billing-review">
+            <!-- Phần Review Billing -->
+          </div>
+        </div>
+        <div class="payment-options">
+          <div class="payment-option">
+            <input type="checkbox" id="bank-transfer">
+            <label for="bank-transfer">Direct bank transfer</label>
+          </div>
+          <p style="background-color: #d4edf5;padding:10px; color:#333" class="payment-message">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+          <div class="payment-option">
+            <input type="checkbox" id="check-payments">
+            <label for="check-payments">Check payments</label>
+          </div>
+          <input type="checkbox" id="check-payments">
+          <label for="check-payments">Cash on delivery</label>
+        </div>
+        
+    </div>
+  </body>
+</html>

@@ -1,0 +1,863 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-top: 0;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f1f0eb;
+  font-family: "Lora", serif;
+}
+
+.head1 {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+.head2 {
+  width: 1110px;
+  margin: auto;
+}
+
+.head1 .background-img {
+  background-image: url(assets/img/img9.jpg);
+  background-size: 100%;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  background-color: transparent;
+  position: absolute;
+  filter: brightness(60%);
+}
+
+.head1-sub {
+  width: 1110px;
+  margin: auto;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #ccc;
+}
+
+/* ======== List LEFT ======== */
+.list-left1 {
+  display: flex;
+  list-style: none;
+  margin-top: 20%;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.list-left1 li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-left1 li a {
+  position: relative;
+}
+
+.list-left1 li a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 1.5px;
+  width: 0;
+  bottom: -10px;
+  left: 0px;
+  transition: 0.3s;
+}
+
+.list-left1 li a:hover::after {
+  width: 100%;
+}
+
+.mdl-mid {
+  margin-top: 10px;
+}
+
+/* ======== List RIGHT ======== */
+.list-right1 {
+  display: flex;
+  list-style: none;
+}
+
+.list-right1 li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-right {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13%;
+}
+
+.button {
+  margin-left: 10px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0px;
+  fill: #fff;
+  color: #fff;
+  background-color: #02010100;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  padding: 17px 17px;
+}
+
+.button:hover {
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+/* Caption */
+.caption {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 120px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+/* ===========  BOOKING ============== */
+.input-container label {
+  color: #fff;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-container {
+  margin-right: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #375570;
+}
+
+.input-container input,
+.input-container select {
+  width: 150px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.input-container input,
+.input-container select {
+  width: 150px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.input-container input,
+.input-container select {
+  width: 150px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  margin-right: 20px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container select {
+  width: 150px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4c7294;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+/* ========= CONTENT 3 ============ */
+.container1 {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.image-container1 {
+  flex: 0 0 auto; /* Không co giãn */
+  margin-right: 0px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.image-container1 img {
+  width: 85%;
+  height: auto;
+  display: block; /* Để ngăn ảnh có margin-bottom */
+}
+
+.content-container1 {
+  margin-right: 100px;
+  text-align: center; /* Canh giữa nội dung */
+  line-height: 1.7;
+}
+
+.content-container1 h2 {
+  line-height: 0.1;
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: #000;
+}
+
+.offer-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.offer-button:hover {
+  background-color: white;
+}
+
+/* Container2 */
+.container2 {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.content-container2 {
+  flex: 1; /* Co giãn để lấp đầy không gian còn lại */
+  text-align: center; /* Canh giữa nội dung */
+  line-height: 1.7;
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+.image-container2 {
+  flex: 0 0 auto; /* Không co giãn */
+  margin-left: 20px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.image-container2 img {
+  float: right;
+  max-width: 85%;
+  height: auto;
+  display: block; /* Để ngăn ảnh có margin-bottom */
+}
+
+.content-container2 h2 {
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.directions-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.directions-button:hover {
+  background-color: white;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  height: 50vh; /* Chiều cao cùng với chiều cao của viewport */
+}
+
+.content3 {
+  text-align: center; /* Canh giữa nội dung */
+}
+
+.content3 h2 {
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.content3 p {
+  display: inline-block; /* Hiển thị như một block nhỏ */
+  max-width: 80%; /* Chiều rộng tối đa */
+  padding: 0 15%; /* Khoảng cách đều hai bên */
+  margin: auto; /* Xóa margin mặc định */
+  line-height: 1.4;
+  font-size: 24px;
+}
+
+/*  FOUR IMAGE */
+.image-container4 {
+  display: flex;
+  justify-content: space-between; /* Canh giữa theo chiều ngang và căn đều các phần tử */
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image {
+  flex-basis: 23%; /* Chiếm 23% chiều rộng */
+  text-align: center; /* Canh giữa nội dung */
+}
+
+.image img {
+  max-width: 100%; /* Ảnh sẽ không vượt quá chiều rộng của phần tử cha */
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+}
+
+.image-info {
+  display: flex;
+  justify-content: space-between; /* Canh giữa theo chiều ngang và căn đều các phần tử */
+  margin-top: 5px; /* Khoảng cách từ nội dung ảnh đến giá tiền */
+}
+
+.image-info .name,
+.image-info .price {
+  flex-basis: 50%; /* Chiếm 50% chiều rộng */
+}
+
+/* ONE IMAGE */
+.image-container9 {
+  overflow: hidden; /* Ẩn phần bên ngoài container */
+  width: 100%; /* Chiều rộng của container */
+  height: 80vh; /* Chiều cao của container */
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.hover-slide {
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển động */
+}
+
+.hover-slide:hover {
+  transform: scale(1.2); /* Phóng to ảnh khi lướt qua */
+}
+
+.image-container5 {
+  overflow: hidden; /* Ẩn phần bên ngoài container */
+  width: 100%; /* Chiều rộng của container */
+  height: 80vh; /* Chiều cao của container */
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.hover-slide {
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển động */
+}
+
+.hover-slide:hover {
+  transform: scale(1.2); /* Phóng to ảnh khi lướt qua */
+}
+
+/* CONTENT 6 */
+.container6 {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.content6 {
+  flex: 1; /* Co giãn để lấp đầy không gian còn lại */
+  margin-left: 15%;
+  margin-bottom: 50px;
+}
+
+.content6 h2 {
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.content6 p {
+  max-width: 50%;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.discover-more {
+  margin-right: 15%;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discover-more:hover {
+  background-color: white;
+}
+
+/* ===== image container 7  =====*/
+.image-container7 {
+  display: flex; /* Sắp xếp các ảnh trên cùng một hàng */
+}
+
+.image-container7 img {
+  margin-top: 50px;
+  width: 20%; /* 4 ảnh sẽ chiếm 25% chiều rộng mỗi ảnh */
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+  margin-left: 15px;
+  margin: auto;
+}
+
+/* ===== content 8 ===== */
+.container8 {
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  height: 50vh; /* Chiều cao cùng với chiều cao của viewport */
+}
+
+.content8 {
+  margin-top: 50px;
+  text-align: center; /* Canh giữa nội dung */
+}
+
+.content8 h2 {
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.content8 p {
+  display: inline-block; /* Hiển thị như một block nhỏ */
+  max-width: 80%; /* Chiều rộng tối đa */
+  padding: 0 15%; /* Khoảng cách đều hai bên */
+  margin: auto; /* Xóa margin mặc định */
+  line-height: 1.4;
+  font-size: 24px;
+}
+
+/* Announce */
+.title1 {
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 120px;
+  color: #fff;
+}
+
+.icon2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #00617c;
+}
+
+.notice {
+  color: #4e7883;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+.button1 {
+  background-color: #eee1ef;
+  padding-top: 5px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  width: 170px;
+  padding-left: 30px;
+}
+
+.button1 a {
+  text-decoration: none;
+  color: rgb(48, 48, 47);
+  width: 100%;
+  padding-top: 50px;
+}
+
+.button1:hover {
+  background-color: #eeddef;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking .buton a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0px;
+  background-color: #527295;
+  border-radius: 0px;
+  padding: 10px 30px;
+}
+
+.container10 {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.content10 {
+  flex: 1; /* Co giãn để lấp đầy không gian còn lại */
+  margin-left: 15%;
+  margin-bottom: 50px;
+}
+
+.content10 h2 {
+  font-family: "Silverline Script Demo";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 100px;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.content10 p {
+  max-width: 50%;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.discover-more1 {
+  margin-right: 15%;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discover-more1:hover {
+  background-color: white;
+}
+
+/* ======== Content 2 ========== */
+.info {
+  border-top: 1px solid #ccc;
+  padding-top: 70px;
+  margin-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon3 {
+  margin-top: 30px;
+}
+
+.mail {
+  margin-top: 10px;
+  height: 40px;
+  width: 320px;
+  background-color: #eee;
+}
+
+.button2 {
+  margin-top: 20px;
+}
+
+.button2 a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 0px;
+  background-color: #527295;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  padding: 10px 30px;
+}
+
+.button2 a:hover {
+  background-color: #415b77;
+}
+
+.hotline {
+  margin-top: 20px;
+}
+
+.hotline div a {
+  line-height: 1.6;
+  text-decoration: none;
+  color: #000;
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social i {
+  margin-left: 10px;
+}
+
+/* info1 */
+.info1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.info1 ul {
+  list-style: none;
+}
+
+.info1 ul li {
+  margin-top: 5px;
+}
+
+.inf-right {
+  margin-top: 15px;
+}
+
+/* info2 */
+.info2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info2 img {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 90px;
+  height: 85px;
+}
+
+/* ảnh content cuối */
+.image-containerr {
+  display: flex; /* Sắp xếp các ảnh trên cùng một hàng */
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.image-wrapper {
+  position: relative; /* Định vị tương đối để có thể định vị button */
+  margin-right: 20px; /* Khoảng cách giữa các ảnh */
+}
+
+.image-wrapper img {
+  width: 100%; /* Chiều rộng ảnh là 100% của phần tử cha */
+  height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Hiệu ứng khi di chuột vào */
+}
+
+.learn-more {
+  position: absolute; /* Định vị tuyệt đối */
+  bottom: 10px; /* Khoảng cách từ dưới lên */
+  left: 60%; /* Canh giữa theo chiều ngang */
+  padding: 5px 10px;
+  background-color: white; /* Màu nền ban đầu */
+  color: black; /* Chữ màu đen ban đầu */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng khi di chuột vào */
+}
+
+.image-description2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  box-sizing: border-box; /* Tính cả padding vào width và height */
+  opacity: 0; /* Ẩn ban đầu */
+  transition: opacity 0.3s ease; /* Hiệu ứng hiển thị */
+}
+
+.image-wrapper:hover .image-description {
+  opacity: 1; /* Hiển thị khi hover vào ảnh */
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05); /* Zoom nhẹ ảnh và nút */
+  filter: brightness(80%); /* Màu hơi tối đi */
+}
+
+.learn-more:hover {
+  color: white; /* Chữ màu trắng khi hover vào ảnh */
+  background-color: #007bff; /* Nền xanh khi hover vào ảnh */
+  filter: brightness(80%);
+  transform: scale(1.1);
+}
+
+/* BILLING */
+.container-bill {
+  display: flex;
+  max-width: 1110px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.billing-details {
+  flex: 0 0 75%;
+  padding: 20px;
+}
+
+/* CSS Existing Styles */
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #eee; /* Màu nền của các ô nhập text */
+}
+
+.input-group select {
+  appearance: auto;
+}
+
+.input-group textarea {
+  height: 100px;
+}
+
+.billing-review {
+  flex: 0 0 35%;
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group select {
+  appearance: auto;
+}
+
+.input-group textarea {
+  height: 100px;
+}
+
+.billing-review table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.billing-review th,
+.billing-review td {
+  border: none;
+  padding: 8px;
+}
+
+.header-row {
+  background-color: black;
+  color: white;
+}
+
+.separator-row td {
+  border-top: 1px solid #ccc;
+}
+
+.separator-row:not(:first-child) td {
+  border-top: none;
+}
+
+.separator-row:first-child td {
+  border-bottom: 1px solid #ccc;
+}
